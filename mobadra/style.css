@@ -404,7 +404,15 @@ Header Styles
 .main-nav.is_stuck .top-cart {
     padding: 13px 0;
 }
-
+/*in container spacing*/
+.navbar-header{
+  width:407;
+  float: left;
+}
+.navbar-collapse{
+  width: 482;
+  float: left;
+}
 /*
  Newsletter Signup
  */
