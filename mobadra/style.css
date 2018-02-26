@@ -391,6 +391,10 @@ Header Styles
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #2867de;
 }
+.navbar-toggle{
+  display: none;
+}
+
 
 /* Top Cart */
 
@@ -433,7 +437,7 @@ Header Styles
 }
 /*in container spacing*/
 .navbar-header{
-  width:407;
+  width:290;
   float: left;
 }
 .navbar-collapse{
@@ -493,6 +497,7 @@ Header Styles
     background: #333333;
     color: #7f7f7f;
     float:  left;
+    width: -webkit-fill-available;
 }
 .footer-top .footer-widget {
     padding-bottom: 50px;
@@ -546,6 +551,31 @@ Header Styles
 .footer-top li a:hover {
     color: #ff3450;
 }
+.footer-top .container{
+  width: 1140;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 206.5;
+  margin-right: 206.5;
+}
+.footer-top .raw{
+  margin-left: -15;
+  margin-right: -15;
+
+}
+.footer-top{
+  padding-top: 80px;
+  padding-bottom: 270px;
+}
+.row .footer-widget {
+  width: 262px;
+  float:  left;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 50px;
+}
+
+
 .footer-bottom {
     border-top: 1px solid #555;
     padding: 30px 0;
@@ -564,4 +594,8 @@ Header Styles
 }
 .footer-bottom span a:hover {
     color: #ff3450;
+}
+.footer-bottom .container .row{
+  margin-left: 206px;
+  width: 270px;
 }
