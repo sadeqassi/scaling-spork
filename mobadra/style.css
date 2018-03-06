@@ -56,7 +56,7 @@ input[type=text] {
 }
 /*inline lists*/
 ul {
-  display: inline;
+  /* display: inline-block; */
   margin: 0;
   padding: 0;
 }
@@ -219,8 +219,9 @@ Header Styles
     color: #7f7f7f;
 }
 .nav-top .container{
-  padding-left: 150px;
+  /* padding-left: 150px; */
   width:  1140px;
+  margin: auto;
 }
 .nav-top .phone,
 .nav-top .email {
@@ -255,6 +256,7 @@ Header Styles
     padding: 0;
     float: left;
 }
+
 .top-search .input-group-addon > input {
     background: #e7e7e7;
     border: 1px solid #e7e7e7;
@@ -262,11 +264,14 @@ Header Styles
     line-height: 12px;
     padding: 3px 6px;
     text-transform: uppercase;
+    float: inherit;
 }
 .nav-top .language-switchr {
-    float: right;
+    /* float: right; */
     font-size: 11px;
     margin-left: 20px;
+    display: inline-block;
+    width: 64px;
 }
 .nav-top .language-btn {
     background: none;
@@ -274,9 +279,10 @@ Header Styles
     padding: 0;
 }
 .nav-top .currency-switchr {
-    float: right;
+    /* float: right; */
     font-size: 11px;
     margin-left: 20px;
+    display: inline-block;
 }
 .nav-top .currency-btn {
     background: none;
@@ -284,9 +290,10 @@ Header Styles
     padding: 0;
 }
 .nav-top .join-top {
-    float: right;
+    /* float: right; */
     font-size: 11px;
     margin-left: 20px;
+    display: inline-block;
 }
 .nav-top ul {
     padding: 0;
@@ -294,6 +301,8 @@ Header Styles
     border-radius: 0;
     margin-top: 16px;
     min-width: 50px;
+    display: none;
+    
 }
 .nav-top ul li {
     border-bottom: 1px solid #e7e7e7;
@@ -309,8 +318,9 @@ Header Styles
     border-bottom: 0;
 }
 .nav-top .social {
-    float: right;
+    /* float: right; */
     margin-left: 20px;
+    display: inline-block;
 }
 .nav-top .social i {
     font-size: 14px;
@@ -352,8 +362,9 @@ Header Styles
 }
 .header .main-nav .navbar-left li a {
     color: #333;
-    line-height: 100px;
-    padding: 0 18px;
+    /* line-height: 100px; */
+    padding: 34px 18px;
+    display: block;
 }
 .header .main-nav .navbar-left li a:hover {
     color: #ff3450;
@@ -410,7 +421,7 @@ Header Styles
 .top-cart {
     font-size: 24px;
     line-height: 20px;
-    padding: 28px 0;
+    /* padding: 28px 0; */
     position: relative;
     text-align: center;
     /* float:  left; */
@@ -448,14 +459,22 @@ Header Styles
 .navbar-header{
   width:290;
   float: left;
+  margin-top: 10px;
 }
 .navbar-collapse{
-  width: 506;
-  float: left;
+    display: inline-block;
+    height: 195px;
+    width: 820px;
+    float: left;
+    margin: auto;
 }
 .navbar .container{
   margin-left: 206.5px;
-  margin-right: 206.5px
+  margin-right: 206.5px;
+}
+.nav{
+
+  float: right;
 }
 /*
  Newsletter Signup
@@ -464,7 +483,12 @@ Header Styles
 .newsletter-section {
     background: #2867de;
     padding: 50px 0;
-    float: left;
+    display: inline-block;
+    margin: auto;
+    padding-right: 210px;
+    padding-left: 210px;
+}
+.newsletter-section .container{
 }
 .newsletter-section .title {
     color: #fff;
